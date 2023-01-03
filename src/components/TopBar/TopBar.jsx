@@ -15,7 +15,7 @@ const TopBar = ({state, setState}) => {
   return (
     <>
         <div className="flex justify-start items-center">
-            <div className="flex justify-start items-center w-[270px]">
+            <div className="flex justify-start items-center w-[320px]">
                     <span onClick={sideberHandler} className="text-2xl text-secondary cursor-pointer"><GiHamburgerMenu/></span>
                     <h1 className='pl-3 uppercase font-bold text-xl text-secondaryShade'>Dashboard</h1>
                 </div>
