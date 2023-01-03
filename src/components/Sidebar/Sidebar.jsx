@@ -22,7 +22,7 @@ const Sidebar = ({state}) => {
 
   return (
     <>
-        <div className={`w-[320px] h-screen bg-secondary transition-all ease-in-out duration-300 ${state==='true'? '': 'w-[110px]'} `}>
+        <div className={`w-[270px] h-screen bg-secondary transition-all ease-in-out duration-300 ${state==='true'? '': 'w-[110px]'} `}>
             <div className={`mx-4 ${state==='true'? '': 'mx-2'}`}>
                 <div>
                     <ul className="mt-4">

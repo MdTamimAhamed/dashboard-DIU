@@ -17,7 +17,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="flex justify-start mt-4">
+            <div className="flex  mt-4">
               <Sidebar
                 state={sideber}
               />
