@@ -16,25 +16,25 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login/>}/>
-          <Route path="/sign-up" element={<Signup/>}/>
-          <Route path="/home" element={<Home/>}>
-            {/* Main menu */}
-            <Route path="dashboard" element={<Dashboard/>} />
-            <Route path="admin" element={<Admin/>}/>
-            <Route path="supervisors" element={<Supervisors/>}/>
-            <Route path="students" element={<Students/>}/>
-            <Route path="projects" element={<Projects/>}/>
-            <Route path="preference-list" element={<PreferenceList/>}/>
-            <Route path="preference-description" element={<PreferenceDescription/>}/>
-            
-            {/* Preferences */}
-            <Route path="settings" element={<Settings/>}/>
-            <Route path="support" element={<Support/>}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/sign-up" element={<Signup/>}/>
+            <Route path="/home" element={<Home/>}>
+              {/* Main menu */}
+              <Route path="dashboard" element={<Dashboard/>} />
+              <Route path="admin" element={<Admin/>}/>
+              <Route path="supervisors" element={<Supervisors/>}/>
+              <Route path="students" element={<Students/>}/>
+              <Route path="projects" element={<Projects/>}/>
+              <Route path="preference-list" element={<PreferenceList/>}/>
+              <Route path="preference-description" element={<PreferenceDescription/>}/>
+              
+              {/* Preferences */}
+              <Route path="settings" element={<Settings/>}/>
+              <Route path="support" element={<Support/>}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>    
     </>
   );
 }
