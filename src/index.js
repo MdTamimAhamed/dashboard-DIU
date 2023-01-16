@@ -6,8 +6,7 @@ import { Store } from './context/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Store>
-        <App />
-    </Store>
+  <Store>
+    <App />
+  </Store>
 );
-
