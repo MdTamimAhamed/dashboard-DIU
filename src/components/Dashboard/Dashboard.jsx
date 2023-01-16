@@ -2,10 +2,18 @@ import { useContext, useEffect } from 'react';
 import { AuthContext } from '../../context/Store';
 
 const Dashboard = () => {
-  const { token, role, retrieveDataFromLocalStorage } = useContext(AuthContext);
+  const {
+    token,
+    role,
+    retrieveDataFromLocalStorage,
+    authenticated,
+    getProfile,
+    profile
+  } = useContext(AuthContext);
 
   useEffect(() => {
     retrieveDataFromLocalStorage();
+    if (authenticated && !profile) getProfile();
   }, []);
 
   return (

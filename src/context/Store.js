@@ -60,12 +60,18 @@ export const Store = ({ children }) => {
     }
   }
 
+  async function getProfile() {
+    // URL: /api/auth/profile
+    // Call this endpoint if user is authenticated and if profile data is not in the state
+  }
+
   return (
     <AuthContext.Provider
       value={{
         ...state,
         login,
-        retrieveDataFromLocalStorage
+        retrieveDataFromLocalStorage,
+        getProfile
       }}
     >
       {children}
